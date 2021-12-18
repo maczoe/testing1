@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="invoice_form_fel_gt_extra">
+        <field name="name">account.move.form.fel_gt</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.move.form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@id='other_tab']" position="before">
+                <field name="result"/>
+                <field name="date_transaction"/>
+                <field name="origin"/>
+                <field name="description"/>
+                <field name="emition_control"/>
+                <field name="infile_alert"/>
+                <field name="infile_alert_description"/>
+                <field name="sat_alert"/>
+                <field name="sat_alert_description"/>
+                <field name="errors"/>
+                <field name="error_description"/>
+                <field name="aditional_information"/>
+                <field name="uuid"/>
+                <field name="serie"/>
+                <field name="number"/>
+            </xpath>
+        </field>
+    </record>
+
+<!--    <record model="ir.ui.view" id="journal_form_fel_gt">-->
+<!--        <field name="name">account.journal.form.fel_gt</field>-->
+<!--        <field name="model">account.journal</field>-->
+<!--        <field name="inherit_id" ref="l10n_gt_extra.l10n_gt_view_account_journal_form"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <data>-->
+<!--                <group name="extra" position="inside">-->
+<!--                    <group string="FEL">-->
+<!--                        <field name="generar_fel"/>-->
+<!--                        <field name="tipo_documento_fel"/>-->
+<!--                        <field name="error_en_historial_fel"/>-->
+<!--                        <field name="contingencia_fel"/>-->
+<!--                    </group>-->
+<!--                </group>-->
+<!--            </data>-->
+<!--        </field>-->
+<!--    </record>-->
+<!--    -->
+<!--    <record id="view_company_form_fel_gt" model="ir.ui.view">-->
+<!--        <field name="name">res.company.form.fel_gt</field>-->
+<!--        <field name="model">res.company</field>-->
+<!--        <field name="inherit_id" ref="base.view_company_form"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <data>-->
+<!--                <notebook position="inside">-->
+<!--                    <page string="Extra">-->
+<!--                        <group string="FEL">-->
+<!--                            <group>-->
+<!--                                <field name="afiliacion_iva_fel"/>-->
+<!--                                <field name="frases_fel"/>-->
+<!--                                <field name="adenda_fel"/>-->
+<!--                            </group>-->
+<!--                        </group>-->
+<!--                    </page>-->
+<!--                </notebook>-->
+<!--            </data>-->
+<!--        </field>-->
+<!--    </record>-->
+        
+</odoo>
